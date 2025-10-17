@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+</head>
+<body>
+    <h1>Student Information Form</h1>
+
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+    
+    <form>
+        <label for="Full name">Full Name :</label>
+        <input type="text" id="Full name" name="Full name" required>
+        <br><br>
+
+        <label for="Email">Email :</label>
+        <input type="email" id="Email" name="User Mail ID" required>
+        <br><br>
+
+        <label for="pwd">password :</label>
+        <input type="password" id="pwd"  name="password" autocomplete="off" required>
+        <br><br>
+        
+        <label for="date">Date of Birth: </label>
+        <input type="date" id="date" name="dob">
+        <br><br>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" cols="50">
+        </textarea><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Gender</b></legend>
+            <input type="radio" name="gender" vale="m">Male<br>
+            <input type="radio" name="gender" value="f">Female<br>
+            <input type="radio" name="gender" value="f">Other        
+            <br>
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend><b>Areas of Interest</b></legend>
+
+             <label>
+            <input type="checkbox" name="Web Development" value="Web Development">Web Development
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="Artificial Intelligence" value="Artificial Intelligence">Artificial Intelligence
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="Data Science" value="Data Science">Data Science
+        </label><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>Programming Skill Level</b></legend>
+            <label for="level">Level:</label>
+            <input type="range" id="level" value="level" min="0" max="10">
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>Upload Photo</b></legend>
+            <input type="file" name="file" value="file" accept=".pdf, .jpg, .png">
+        <br>
+        </fieldset><br>
+
+        <input type="submit">
+        <input type="reset">
+        <button>Cancel</button>
+
+</body>
+</html>
