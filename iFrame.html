@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame</title>
+</head>
+<body>
+    <h2>iFrame in HTML</h2>
+    <!-- External website using iframe -->
+    <iframe 
+        src="https://www.kodnest.com/" 
+        scrolling="yes" 
+        width="400" 
+        height="400"
+        frameborder="0">
+    </iframe>
+
+    <h2>iFrame in HTML - srcdoc</h2>
+    <!-- Using srcdoc attribute to embed HTML content directly -->
+    <iframe 
+        srcdoc='<a href="https://www.kodnest.com/" target="iframe2">Click here to visit Kodnest website</a>'
+        frameborder="0"
+        width="400"
+        height="100">
+    </iframe>
+
+    <!-- Target iframe for link above -->
+    <iframe 
+        srcdoc="<h2>Display here</h2>" 
+        name="iframe2" 
+        width="400" 
+        height="200">
+    </iframe>
+</body>
+</html>
